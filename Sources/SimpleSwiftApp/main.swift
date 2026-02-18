@@ -4,7 +4,7 @@ let logic = AppLogic()
 let userName = CommandLine.arguments.dropFirst().first ?? "Friend"
 
 print(logic.greeting(for: userName))
-print("\nHighlights for today:")
+print("\nHighlight for today:")
 print(logic.featuredQuote())
 for (index, feature) in logic.featureHighlights().enumerated() {
     print("\(index + 1). \(feature)")
